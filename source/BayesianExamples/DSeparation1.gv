@@ -1,0 +1,7 @@
+digraph G{
+rankdir="LR";
+A -> B;
+B[style=filled];
+B -> C;
+
+}

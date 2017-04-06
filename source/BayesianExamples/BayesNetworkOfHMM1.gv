@@ -1,0 +1,21 @@
+digraph G {
+	subgraph cluster0{
+		Z₁ [shape=none];
+		Z₂ [shape=none];
+		Z₃ [shape=none];
+		Zₙ [shape=none];
+
+		S₁ -> Z₁; 
+		S₂ -> Z₂; 
+		S₃ -> Z₃; 
+		Sₙ -> Zₙ; 
+		{rank=same Z₁ Z₂ Z₃ Zₙ};
+		S₁ [shape=none]; 
+		S₂ [shape=none]; 
+		S₃ [shape=none]; 
+		S₄ [shape=none,label ="..."]; 
+		Sₙ [shape=none]; 
+		S₁ -> S₂ -> S₃ -> S₄ -> Sₙ; 
+		{rank=same S₁ S₂ S₃ S₄ Sₙ};
+	}
+}

@@ -1,0 +1,7 @@
+digraph G{
+#node[nodesep=2.0]
+{rank=same A B};
+A:nw -> A:sw[label="0.5"];
+A:n -> B:n[label="0.5"];
+B:s -> A:s[label="1"];
+}

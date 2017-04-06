@@ -1,0 +1,8 @@
+digraph G {
+    a -> b -> c;
+    b -> d;
+    a [shape=none];
+    c [shape=polygon,sides=4,skew=.4,label="hello world"]
+    d [shape=invtriangle];
+    e [shape=polygon,sides=4,distortion=.7];
+}
